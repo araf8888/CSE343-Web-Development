@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pro To-Do List</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Pro To-Do List</h1>
+
+  <div class="row">
+    <input id="taskInput" type="text" placeholder="Add a task">
+    <button id="addBtn">Add</button>
+  </div>
+
+  <div class="controls">
+    <select id="filterSelect">
+      <option value="all">All</option>
+      <option value="completed">Completed</option>
+      <option value="pending">Pending</option>
+    </select>
+
+    <select id="sortSelect">
+      <option value="time">Sort by Time</option>
+      <option value="alpha">Sort A–Z</option>
+    </select>
+  </div>
+
+  <ul id="list"></ul>
+  
+  <script src="script.js"></script>
+</body>
+</html>
